@@ -1,0 +1,85 @@
+{
+  "id": "/planner",
+  "name": "نيوتري بلان: خطّط أسبوعك الصحي",
+  "short_name": "NutriPlan",
+  "description": "خطّط وجبات الأسبوع، واحصل على قائمة مشتريات جاهزة، واطبخ خطوة بخطوة. يعمل دون إنترنت.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/ar/planner",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fdfbf7",
+  "theme_color": "#fdfbf7",
+  "categories": [
+    "food",
+    "health",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "خطة الأسبوع",
+      "short_name": "الخطة",
+      "url": "/ar/planner",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "قائمة المشتريات",
+      "short_name": "المشتريات",
+      "url": "/ar/shopping",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "الوصفات",
+      "short_name": "الوصفات",
+      "url": "/ar/recipes",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "الحاسبة",
+      "short_name": "الحاسبة",
+      "url": "/ar/calculator",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+// Every recipe id, without the recipe data: lets the saved plan and favorites
+// be validated in the app shell without loading the collection (kept in
+// sync with recipes.js by data.test.js).
+
+export const RECIPE_IDS = new Set([
+  'grilled-lemon-chicken-bowl',
+  'green-goddess-grain-salad',
+  'lemon-herb-salmon',
+  'greek-salad',
+  'greek-yogurt-parfait',
+  'caprese-salad',
+  'spaghetti-pomodoro',
+  'minestrone-soup',
+  'turkey-meatballs-marinara',
+  'mushroom-risotto',
+  'rainbow-tofu-stir-fry',
+  'salmon-poke-bowl',
+  'beef-broccoli-stir-fry',
+  'veggie-fried-rice',
+  'fresh-spring-rolls',
+  'black-bean-burrito-bowl',
+  'chicken-fajitas',
+  'huevos-rancheros',
+  'shrimp-tacos',
+  'guacamole-veggie-sticks',
+  'shakshuka',
+  'ful-medames',
+  'falafel-bowl',
+  'chicken-shawarma-plate',
+  'red-lentil-soup',
+  'overnight-berry-oats',
+  'avocado-egg-toast',
+  'turkey-chili',
+  'cobb-salad',
+  'spinach-egg-muffins',
+]);

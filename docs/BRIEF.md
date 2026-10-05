@@ -52,13 +52,23 @@ Most people don't fail at healthy eating because they lack recipes — they fail
 - BMR/TDEE calculator (Mifflin-St Jeor) with animated results, goal presets, and "save target to planner" writing `nutriplan-target`.
 - Fully responsive 375px+, keyboard accessible, reduced-motion compliant, deployed as a static site on Vercel.
 
+### Added during the build (2026-10-05)
+
+The owner asked for a tool people use every week, not a mockup, so several items below moved into scope. Details and reasons are in [BUILD-LOG.md](BUILD-LOG.md).
+
+- A sixth route, `/shopping`: a shopping list merged across recipes and servings, by aisle, with tick-off, pantry, extras, share and print. Plus `/privacy` (your data: backup, restore, delete).
+- Planner: a snacks slot, servings per slot, macros per day against targets, a weekly summary, calendar weeks, copy day, repeat last week, move/swap (keyboard sheet and mouse drag-and-drop), undo, and **Fill my week** (a deterministic, explainable auto-planner).
+- Cook mode (full-screen steps, Screen Wake Lock, timers with a Web Audio chime), favorites, and your own meals with calories and macros.
+- Metric and US units, calculator safety rules (floors, steep-cut warning, under-18s, medical note, support link) and a protein-led macro split.
+- An evening (dark) theme, English and Arabic with full RTL, and an installable PWA that works offline.
+
 ### Explicitly out of scope
 
 - Backend, database, accounts, or real auth of any kind.
-- Drag-and-drop between planner slots (adding is picker-modal only).
-- Shopping-list generation, recipe authoring/editing, favorites, or ratings.
-- Imperial units in the calculator (metric cm/kg only).
-- Dark mode / theme toggle — NutriPlan ships one light, food-forward theme.
+- ~~Drag-and-drop between planner slots~~ Added: mouse drag-and-drop plus a keyboard-friendly move/swap sheet.
+- ~~Shopping-list generation, recipe authoring/editing, favorites~~ Added (your own meals have calories and macros, not ingredient lists). Ratings stay out.
+- ~~Imperial units in the calculator~~ Added (metric and US, in the calculator, recipes and the list).
+- ~~Dark mode / theme toggle~~ Added: an evening theme designed for the food photography, not an inversion.
 - Micronutrients beyond kcal/protein/carbs/fat.
 
 ## Measurable success criteria

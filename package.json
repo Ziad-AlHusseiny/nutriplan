@@ -1,0 +1,44 @@
+{
+  "name": "nutriplan",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "NutriPlan: plan a week of healthy eating, shop from a merged list, and cook hands-free. Thirty recipes with honest macros, in English and Arabic, offline. A front-end portfolio project.",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "preview": "node scripts/serve.mjs 4173",
+    "lint": "eslint . --max-warnings=0",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "images": "node scripts/images.mjs",
+    "check:bundle": "node scripts/check-bundle.mjs",
+    "verify": "npm run lint && npm run test && npm run build && npm run check:bundle && npm run test:e2e"
+  },
+  "dependencies": {
+    "lucide-react": "^1.52.0",
+    "motion": "^12.43.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^5.2.0",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.3",
+    "vite": "^7.3.6",
+    "vitest": "^5.0.3"
+  }
+}

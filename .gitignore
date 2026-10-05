@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+.cache
+*.local
+.DS_Store
+.vercel
+*.log
+playwright-report
+test-results
+blob-report
+qa-screenshots
+CURSOR-PROMPT.md
+.cursor
+.playwright-cli
+.env*
